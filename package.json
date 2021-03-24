@@ -4,7 +4,7 @@
   "scripts": {
     "build:backend": "cd app-rails && bundle update --bundler && bundle update && npm install",
     "build:frontend": "cd app-vue && npm install && npm run build",
-    "build": "npm run build:backend & npm run build:frontend",
+    "build": "npm run build:backend && npm run build:frontend",
     "start:backend": "cd app-rails && bin/rails server",
     "start:frontend": "cd app-vue &&  npm run start",
     "start": "npm run start:backend & npm run start:frontend",
