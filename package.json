@@ -2,7 +2,7 @@
   "name": "account-management-fullstack-level-3",
   "version": "0.0.1",
   "scripts": {
-    "build:backend": "cd app-rails && bundle update --bundler && bundle update && npm install",
+    "build:backend": "cd app-rails && bundle update --bundler && bundle update && npm install && bin/rails db:migrate RAILS_ENV=development",
     "build:frontend": "cd app-vue && npm install && npm run build",
     "build": "npm run build:backend && npm run build:frontend",
     "start:backend": "cd app-rails && bin/rails server",
